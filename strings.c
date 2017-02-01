@@ -66,8 +66,8 @@ int main() {
         printf("E) Incorrect: should return true\n");
     } else if (stringE[0] != 26) {
         printf("E) Incorrect: stored length should be 26 not %d\n", stringE[0]);
-    } else if (memcmp("This is 26 characters long", stringE+1, 27) != 0) {
-        printf("E) Incorrect: string should be 'This is 27 characters long'\n");
+    } else if (memcmp("This is 26 characters long", stringE+1, 26) != 0) {
+        printf("E) Incorrect: string should be 'This is 26 characters long'\n");
     } else {
         printf("E) Correct\n");
     }
